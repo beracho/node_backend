@@ -1,11 +1,15 @@
 module.exports = (sequelize, DataType) => { 
-  const artist = sequelize.define('artist', {
-    id_artist: {
+  const usuario = sequelize.define('usuario', {
+    id_usuario: {
       type: DataType.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
     nombres: {
+      type: DataType.STRING(100), 
+      allowNull: false,
+    },
+    usuario: {
       type: DataType.STRING(100), 
       allowNull: false,
     },
@@ -21,9 +25,9 @@ module.exports = (sequelize, DataType) => {
     createdAt: 'fecha_creacion',
     updatedAt: 'fecha_modificacion',
   });
-  artist.associate = (models) => {
-    artist.hasMany(models.painting, { as: 'paintings', foreignKey: { name: 'fid_artist', allowNull: false } });
+  usuario.associate = (models) => {
+    usuario.hasMany(models.reserva, { as: 'reservas', foreignKey: { name: 'fid_usuario', allowNull: false } });
   };
 
-  return artist;
+  return usuario;
 };
