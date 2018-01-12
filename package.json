@@ -1,0 +1,32 @@
+{
+  "name": "hackaday-backend",
+  "version": "1.0.0",
+  "description": "Backend de la prueba Hackaday",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beracho/node_backend.git"
+  },
+  "author": "Adrian Marcelo Berazaín Mallea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beracho/node_backend/issues"
+  },
+  "homepage": "https://github.com/beracho/node_backend#readme",
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "q": "^1.5.1",
+    "sequelize": "^4.29.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
