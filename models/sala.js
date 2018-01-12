@@ -9,7 +9,7 @@ module.exports = (sequelize, DataType) => {
       type: DataType.STRING(100), 
       allowNull: false,
     },
-    numero_sala: {
+    numero: {
       type: DataType.INTEGER,
       allowNull: false,
     }
